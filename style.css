@@ -166,9 +166,10 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .tag {
+    font-size: large;
     font-family: 'Archivo Black', sans-serif;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 2px 5px;
     background-color: yellow;
     color: #000;
     border-radius: 5px;
