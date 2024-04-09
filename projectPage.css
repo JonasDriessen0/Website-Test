@@ -1,0 +1,77 @@
+/* Header styles */
+header {
+    background-color: #222222;
+    color: #ffdd40;
+    padding: 20px 0;
+    border-bottom: 5px solid yellow;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.back-button img {
+    width: 30px; /* Adjust the size of the back button icon */
+    height: auto;
+}
+
+.project-title {
+    text-align: center;
+    flex-grow: 1; /* Allow the project title to take up remaining space */
+}
+
+.project-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.project-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.project-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.project-details h2 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.project-details p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffdd40;
+}
+
+.back-button:hover {
+    color: #ffdd40;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.dash-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.project-details img {
+    max-width: 100%;
+    height: auto;
+}

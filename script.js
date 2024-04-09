@@ -1,47 +1,63 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
-        { 
-            title: "Project 1", 
-            tags: ["Web", "Design"], 
-            description: "Project 1 description", 
-            image: "img/placeholder.jpg" // Path to the image for Project 1
+        {
+            title: "Ultrakill Vertical Slice",
+            tags: ["Game", "C#", "Unity", "FPS"],
+            description: "A vertical slice of the game Ultrakill",
+            image: "img/ukposter.png",
+            link: "Ultrakill.html" // Add link to project page
         },
-        { 
-            title: "Project 2", 
-            tags: ["Mobile", "App"], 
-            description: "Project 2 description", 
-            image: "img/placeholder.jpg" // Path to the image for Project 2
+        {
+            title: "EvilPunk",
+            tags: ["Game", "C#", "Unity", "Top Down"],
+            description: "A top down 2.5d wave shooter",
+            image: "img/poster.png",
+            link: "project2.html" // Add link to project page
         },
-        // Add more projects here
+        {
+            title: "Generic Tower Defense",
+            tags: ["Game", "C#", "Unity", "Tower Defense"],
+            description: "A simple tower defense game focussing on a clean aesthetic",
+            image: "img/TDposter.png",
+            link: "project3.html" // Add link to project page
+        },
+        {
+            title: "Line Dancer",
+            tags: ["Game", "C#", "Unity", "Rhythm Game"],
+            description: "A simple rythm game made in a week",
+            image: "img/LDposter.png",
+            link: "project4.html" // Add link to project page
+        },
     ];
 
     function displayProjects(projects) {
         const container = document.getElementById('projectContainer');
         container.innerHTML = ''; // Clear existing projects
         projects.forEach(project => {
-            const elem = document.createElement('div');
-            elem.classList.add('project');
-            elem.innerHTML = `
+            const projectElement = document.createElement('a'); // Use <a> tag for links
+            projectElement.href = project.link; // Set href attribute to the project's link
+            projectElement.className = 'project';
+            projectElement.innerHTML = `
                 <img src="${project.image}" alt="${project.title}">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
-                <div class="tags">
-                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                </div>
+                <div class="tags">${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
             `;
-            container.appendChild(elem);
+            container.appendChild(projectElement);
         });
     }
 
-    function filterProjects(tag) {
-        const filteredProjects = projects.filter(p => p.tags.includes(tag));
+    function filterProjects(searchTag) {
+        const filteredProjects = projects.filter(project => 
+            project.tags.some(tag => tag.toLowerCase().includes(searchTag.toLowerCase()))
+        );
         displayProjects(filteredProjects);
     }
 
     document.getElementById('searchTags').addEventListener('input', function(e) {
-        const tag = e.target.value.trim().toLowerCase(); // Convert tag to lowercase for case-insensitive search
-        if (tag) {
-            filterProjects(tag);
+        const searchTag = e.target.value.trim();
+        if (searchTag) {
+            filterProjects(searchTag);
         } else {
             displayProjects(projects); // No input, show all projects
         }
