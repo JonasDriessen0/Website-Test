@@ -75,3 +75,41 @@ header {
     max-width: 100%;
     height: auto;
 }
+
+.ultrakill-info {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of elements */
+    align-items: center; /* Center align the items vertically */
+    margin-bottom: 20px; /* Add some margin at the bottom for spacing */
+}
+
+.ultrakill-gif {
+    width: 50%; /* Adjust the width of the GIF */
+    border-radius: 10px; /* Add border radius for aesthetics */
+}
+
+.ultrakill-text {
+    width: 50%; /* Adjust the width of the text */
+    padding-right: 10px;
+}
+
+.github-link {
+    font-family: 'Archivo Black', sans-serif; /* Set font to Archivo Black */
+    font-size: 30px;
+    margin: 0 auto; /* Center horizontally */
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: yellow;
+    border: none; /* Remove default button border */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: center;
+}
+
+.github-link:hover {
+    background-color: yellow;
+    color: black;
+}

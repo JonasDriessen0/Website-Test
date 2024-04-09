@@ -28,6 +28,20 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "img/LDposter.png",
             link: "project4.html" // Add link to project page
         },
+        {
+            title: "MegaMurder [Prototype]",
+            tags: ["Game", "C#", "Unity", "FPS"],
+            description: "A retro style fast-paced shooter",
+            image: "img/MMposter.png",
+            link: "project5.html" // Add link to project page
+        },
+        {
+            title: "Dino Race",
+            tags: ["Game", "C#", "Unity", "Arcade"],
+            description: "A local multiplayer endless runner race",
+            image: "img/placeholder.jpg",
+            link: "project6.html" // Add link to project page
+        },
     ];
 
     function displayProjects(projects) {
