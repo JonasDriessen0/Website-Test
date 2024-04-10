@@ -5,42 +5,42 @@ document.addEventListener('DOMContentLoaded', function() {
             tags: ["Game", "C#", "Unity", "FPS"],
             description: "A vertical slice of the game Ultrakill",
             image: "img/ukposter.png",
-            link: "Ultrakill.html" // Add link to project page
+            link: "Ultrakill.html"
         },
         {
             title: "EvilPunk",
             tags: ["Game", "C#", "Unity", "Top Down"],
             description: "A top down 2.5d wave shooter",
             image: "img/poster.png",
-            link: "project2.html" // Add link to project page
+            link: "EvilPunk.html"
         },
         {
             title: "Generic Tower Defense",
             tags: ["Game", "C#", "Unity", "Tower Defense"],
             description: "A simple tower defense game focussing on a clean aesthetic",
             image: "img/TDposter.png",
-            link: "project3.html" // Add link to project page
+            link: "GenericTD.html"
         },
         {
             title: "Line Dancer",
             tags: ["Game", "C#", "Unity", "Rhythm Game"],
             description: "A simple rythm game made in a week",
             image: "img/LDposter.png",
-            link: "project4.html" // Add link to project page
+            link: "LineDancer.html"
         },
         {
             title: "MegaMurder [Prototype]",
             tags: ["Game", "C#", "Unity", "FPS"],
             description: "A retro style fast-paced shooter",
             image: "img/MMposter.png",
-            link: "project5.html" // Add link to project page
+            link: "MegaMurder.html"
         },
         {
             title: "Dino Race",
             tags: ["Game", "C#", "Unity", "Arcade"],
             description: "A local multiplayer endless runner race",
             image: "img/placeholder.jpg",
-            link: "project6.html" // Add link to project page
+            link: "DinoRace.html"
         },
     ];
 
