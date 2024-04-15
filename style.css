@@ -225,3 +225,74 @@ nav ul li a:hover, nav ul li a:focus {
         margin: 10px 0;
     }
 }
+
+.enemy-types {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+.enemy {
+    width: 30%; /* Set the width of each enemy to 30% of the container */
+    margin-bottom: 20px; /* Add space between each enemy */
+    text-align: center; /* Center text horizontally */
+}
+
+.enemy img {
+    max-width: 100%; /* Adjust the width of the enemy images */
+    height: auto;
+}
+
+.enemy h4 {
+    font-family: 'Archivo Black', sans-serif; /* Set font to Archivo Black */
+    font-size: 30px;
+    color: black;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-top: 5px; /* Add space between image and title */
+}
+
+.gun-types {
+    display: flex;
+    flex-wrap: wrap; /* Allow guns to wrap to the next line */
+    justify-content: space-around; /* Distribute guns evenly along the row */
+    margin-top: 20px; /* Add space above the gun section */
+}
+
+.gun {
+    width: 45%; /* Set the width of each gun to fit in a 2x2 grid */
+    margin-bottom: 20px; /* Add space between each gun */
+    text-align: center; /* Center text horizontally */
+}
+
+.gun img {
+    max-width: 100%; /* Adjust the width of the gun images */
+    height: auto;
+}
+
+.gun h4 {
+    font-family: 'Archivo Black', sans-serif; /* Set font to Archivo Black */
+    font-size: 30px;
+    color: black;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-top: 5px; /* Add space between image and title */
+}
+
+.RocketLauncher img {
+    transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+.enemy,
+.gun {
+    background-color: #333; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin between each enemy/gun */
+}
+
+.enemy img, .gun img{
+    background-color: #1d1d1d;
+    border-radius: 10px;
+}
