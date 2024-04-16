@@ -100,23 +100,32 @@ header {
     padding-right: 10px;
 }
 
-.github-link {
-    font-family: 'Archivo Black', sans-serif; /* Set font to Archivo Black */
-    font-size: 30px;
-    margin: 0 auto; /* Center horizontally */
-    display: block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: yellow;
-    border: none; /* Remove default button border */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    cursor: pointer; /* Change cursor to pointer on hover */
-    text-align: center;
+.button-group {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add some space between the buttons */
+    margin: 20px 0; /* Add some margin above and below the button group */
+    width: 100%; /* Ensure the button group takes the full width */
 }
 
-.github-link:hover {
+.github-button, .download-button{
+    flex: 1; /* Allows each button to grow and take up equal space */
+    font-family: 'Archivo Black', sans-serif; /* Set font to Archivo Black */
+    font-size: 30px; /* Increase font size for better visibility */
+    padding: 10px 20px; /* Adjust padding as necessary */
+    background-color: #333; /* Set background color */
+    color: yellow; /* Set text color */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    text-align: center; /* Center the text inside the buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: center; /* Ensure text is centered */
+    min-width: 0; /* Allows buttons to shrink below their intrinsic width */
+}
+
+.github-button:hover, .download-button:hover {
     background-color: yellow;
     color: black;
 }
