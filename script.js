@@ -22,25 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
             link: "GenericTD.html"
         },
         {
-            title: "Line Dancer",
-            tags: ["Game", "C#", "Unity", "Rhythm Game"],
-            description: "A simple rythm game made in a week",
-            image: "img/LDposter.png",
-            link: "LineDancer.html"
-        },
-        {
             title: "MegaMurder [Prototype]",
             tags: ["Game", "C#", "Unity", "FPS"],
             description: "A retro style fast-paced shooter",
             image: "img/MMposter.png",
             link: "MegaMurder.html"
-        },
-        {
-            title: "Dino Race",
-            tags: ["Game", "C#", "Unity", "Arcade"],
-            description: "A local multiplayer endless runner race",
-            image: "img/placeholder.jpg",
-            link: "DinoRace.html"
         },
     ];
 
@@ -78,6 +64,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     displayProjects(projects); // Initial display of projects
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const emailButton = document.querySelector('.email-button');
+    const emailAddress = document.querySelector('.email-address');
+    const copyFeedback = document.querySelector('.copy-feedback');
+
+    emailButton.addEventListener('click', function() {
+        const emailText = emailAddress.textContent;
+        navigator.clipboard.writeText(emailText)
+            .then(() => {
+                copyFeedback.style.display = 'inline'; // Display feedback message
+                setTimeout(() => {
+                    copyFeedback.style.display = 'none'; // Hide feedback message after 1.5 seconds
+                }, 1500);
+            })
+            .catch(err => {
+                console.error('Failed to copy email: ', err);
+            });
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function() {

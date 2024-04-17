@@ -296,3 +296,113 @@ nav ul li a:hover, nav ul li a:focus {
     background-color: #1d1d1d;
     border-radius: 10px;
 }
+
+.tower-types {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+.tower {
+    width: 30%; /* Set the width of each tower to 30% of the container */
+    margin-bottom: 20px; /* Add space between each tower */
+    text-align: center; /* Center text horizontally */
+}
+
+.tower img {
+    max-width: 100%; /* Adjust the width of the tower images */
+    height: auto;
+}
+
+.tower h4 {
+    font-family: 'Archivo Black', sans-serif; /* Set font to Archivo Black */
+    font-size: 30px;
+    color: black;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-top: 5px; /* Add space between image and title */
+}
+
+.tower {
+    background-color: #333; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 20px; /* Add margin between each tower */
+}
+
+.tower img {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+}
+
+.contact-section {
+    margin-top: 40px;
+    margin-bottom: 100px; /* Add some space above the contact section */
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 10px 20px; /* Increased padding for larger buttons */
+    border-radius: 20px; /* Rounded edges */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    position: relative; /* Add relative positioning */
+}
+
+.email-button .email-address {
+    position: absolute;
+    bottom: -25px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Initially hide the email address */
+}
+
+.email-button:focus .email-address {
+    display: block; /* Show email address when email button is clicked */
+}
+
+.contact-icon {
+    width: 70px; /* Set the width of the icons */
+    height: auto;
+    margin-bottom: 5px; /* Add space between icon and text */
+}
+
+.contact-button:hover {
+    background-color: #555; /* Darken background color on hover */
+    color: yellow;
+}
+
+.contact-button:nth-child(1) {
+    background-color: #333;
+}
+
+.contact-button:nth-child(2) {
+    background-color: #333;
+}
+
+.contact-button:nth-child(3) {
+    background-color: #333;
+}
+
+.contact-button.email-button {
+    border: none; /* Remove button border */
+    position: relative; /* Enable relative positioning */
+}
+
+.email-address {
+    background-color: 333;
+    display: block; /* Make the email address a block element */
+    margin-top: 10px; /* Add some space between the email text and address */
+}
