@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     emailButton.addEventListener('click', function() {
         const emailText = emailAddress.textContent;
-        navigator.clipboard.writeText(emailText)
+        navigator.clipboard.writeText("joonsyt@gmail.com")
             .then(() => {
                 copyFeedback.style.display = 'inline'; // Display feedback message
                 setTimeout(() => {
