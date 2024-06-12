@@ -422,3 +422,17 @@ nav ul li a:hover, nav ul li a:focus {
     background-color: yellow; /* Darken background color on hover */
     color: black;
 }
+
+.construction-bar {
+    background-image: url('img/hazard-pattern.jpg');
+    background-size: 20%; /* Tiling the image three times in the length */
+    background-repeat: repeat;
+    color: red;
+    text-align: center;
+    padding: 0px 0;
+    font-size: 29px;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000;
+    letter-spacing: 2px;
+}

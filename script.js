@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "EvilPunk",
             tags: ["Game", "C#", "Unity", "Top Down"],
             description: "A top down 2.5d wave shooter",
-            image: "img/poster.png",
+            image: "img/EPposter.jpg",
             link: "EvilPunk.html"
         },
         {
